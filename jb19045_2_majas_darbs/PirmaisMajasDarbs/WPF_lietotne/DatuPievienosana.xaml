@@ -1,0 +1,172 @@
+﻿<Window x:Class="WPF_lietotne.DatuPievienosana"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_lietotne"
+        mc:Ignorable="d"
+        xmlns:system="clr-namespace:System;assembly=mscorlib"
+        xmlns:local1="clr-namespace:Order1;assembly=PirmaisMajasDarbs"
+
+        Title="DatuPievienosana" Height="450" Width="800">
+    <Window.Resources>
+        <ObjectDataProvider x:Key="dataFromEnum" MethodName="GetValues"  ObjectType="{x:Type system:Enum}">
+            <ObjectDataProvider.MethodParameters>
+                <x:Type TypeName="local1:states"/>
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
+    </Window.Resources>
+
+    <Grid>
+        <TabControl Margin="25" >
+            <TabItem Header="Izveidot pasūtījumu" Margin="0,0,-16,0" FontSize="16" FontFamily="Microsoft Sans Serif">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1">
+                        <GradientStop Color="#FFF0F0F0"/>
+                        <GradientStop Color="#FFE2AFCB" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition ></ColumnDefinition>
+                        <ColumnDefinition ></ColumnDefinition>
+                        <ColumnDefinition ></ColumnDefinition>
+                        <ColumnDefinition ></ColumnDefinition>
+                        <ColumnDefinition ></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label Content="Stāvoklis" Grid.Column="1" Grid.Row="1" VerticalAlignment="Top"/>
+                    <ComboBox x:Name="cboStavoklis" ItemsSource="{Binding Source={StaticResource dataFromEnum}}"  Height="30" VerticalAlignment="Top" Grid.Column="2" Grid.Row="1"/>
+                    <Label Content="Atbildīgais" Grid.Column="1"  Grid.Row="2" VerticalAlignment="Top" />
+                    <ComboBox x:Name="cboDarbinieks" Grid.Column="2" Grid.Row="2" Height="30" VerticalAlignment="Top"></ComboBox>
+                    <Label Content="Pasūtītajs" Grid.Column="1"  Grid.Row="3" VerticalAlignment="Top"/>
+                    <ComboBox x:Name="cboPasutitajs" Grid.Column="2" Grid.Row="3" Height="30" VerticalAlignment="Top" ></ComboBox>
+                    <Label Content="Paūtījuma datums" Grid.Column="1"  Grid.Row="5" VerticalAlignment="Top"  />
+                    <DatePicker x:Name="PasutijumaDatums" Grid.Column="2" Grid.Row="5" Height="30" VerticalAlignment="Top"  ></DatePicker>
+                    <Label Content="Produkta detaļas" Grid.Column="1"  Grid.Row="4" VerticalAlignment="Top"/>
+                    <Button x:Name="PievienotDetalas" Content="Pievienot detaļas" Grid.Column="2" Grid.Row="4" Height="30" VerticalAlignment="Top" Background="Beige"  Click="PievienotDetalas_Click"></Button>
+                    <Label Content="Pēc lauku aizpildīšanas, lūdzu, neaizmirsiet noklikšķināt uz 'Izveidot pasutījumu' pogu! " Grid.Row="8" Grid.Column="1" Grid.ColumnSpan="4"  FontSize="12"  />
+                    <Button x:Name="Pievienot" Content="Izveidot pasūtījumu" Grid.Column="1" Grid.Row="7" Height="30" VerticalAlignment="Center" Background="#FFA5CDDC" Click="PievienotPasutijumu_Click_1" Grid.ColumnSpan="3" Margin="126,0,126,0"/>
+                    <ScrollViewer x:Name="DetalasSarakstsScroller" Width="234" Visibility="Hidden" Grid.Row="1" Grid.RowSpan="5"  Background="Lavender" Grid.Column="3" Grid.ColumnSpan="2">
+                        <TextBlock x:Name="DetalasSaraksts" Visibility="Hidden" IsEnabled="False"  HorizontalAlignment="Left" Background="Lavender" TextWrapping="Wrap" VerticalAlignment="Center" />
+                    </ScrollViewer>
+                    <Button x:Name="DzestDetalas"  Visibility="Hidden" Click="DzestDetalas_Click" Content="Dzēst detaļas" Grid.Column="3" Grid.Row="6" Height="30" VerticalAlignment="Center" Background="Beige" Grid.ColumnSpan="2" Margin="75,0,74,0"/>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="Pievienot darbinieku" Margin="16,0,-33,0" FontSize="16" FontFamily="Microsoft Sans Serif" >
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1">
+                        <GradientStop Color="#FFF0F0F0"/>
+                        <GradientStop Color="#FFE2AFCB" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label Content="Vārds" Grid.Column="1"  Grid.Row="1" VerticalAlignment="Top"/>
+                    <TextBox x:Name="DarbiniekaVards" Grid.Column="2" Grid.Row="1"  Height="30" VerticalAlignment="Top"/>
+                    <Label Content="Uzvārds" Grid.Column="1"  Grid.Row="2"  Grid.RowSpan="2" VerticalAlignment="Top"/>
+                    <TextBox x:Name="DarbiniekaUzvards" Grid.Column="2" Grid.Row="2"    Height="30" VerticalAlignment="Top"></TextBox>
+                    <Label Content="Email" Grid.Column="1"   Grid.Row="3"  Grid.RowSpan="2" VerticalAlignment="Top"/>
+                    <TextBox x:Name="DarbiniekaEmail" Grid.Column="2" Grid.Row="3"    Height="30" VerticalAlignment="Top"></TextBox>
+                    <Label Content="Līguma datums" Grid.Column="1" Grid.Row="4" Grid.RowSpan="2" VerticalAlignment="Top"/>
+                    <DatePicker x:Name="DarbiniekaLigumsDate" Grid.Row="4" Grid.Column="2" Height="30" VerticalAlignment="Top"></DatePicker>
+                    <Label Content="Līguma numurs" Grid.Column="1"   Grid.Row="5" Grid.RowSpan="2" VerticalAlignment="Top"/>
+                    <TextBox x:Name="DarbiniekaNumurs" Grid.Column="2" Grid.Row="5"  Height="30" VerticalAlignment="Top" ></TextBox>
+                    <Button x:Name="PievienotDarbinieku" Content="Pievienot" Grid.Column="2" Grid.Row="6" Height="30" Background="#FFA5CDDC" VerticalAlignment="Top" Click="PievienotDarbinieku_Click"></Button>
+                </Grid>
+
+            </TabItem>
+            <TabItem Header="Pievienot pasūtītāju" Margin="36,-1,-56,-1" FontSize="16" FontFamily="Microsoft Sans Serif">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1">
+                        <GradientStop Color="#FFF0F0F0"/>
+                        <GradientStop Color="#FFE2AFCB" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label Content="Vārds" Grid.Column="1" Height="30" Grid.Row="1" VerticalAlignment="Top" Grid.ColumnSpan="3" Margin="0,0,325,0" />
+                    <TextBox x:Name="PasutitajaVards" Grid.Column="2" Grid.Row="1"  Height="30" VerticalAlignment="Top"/>
+                    <Label Content="Uzvārds" Grid.Column="1"   Height="30"  Grid.Row="1" VerticalAlignment="Top" Grid.ColumnSpan="3" Margin="0,50,325,0" Grid.RowSpan="2"/>
+                    <TextBox x:Name="PasutitajaUzvards" Grid.Column="2" Grid.Row="1"  Height="30" VerticalAlignment="Top" Margin="0,50,0,0" Grid.RowSpan="2"/>
+                    <Label Content="Email" Grid.Column="1"  Height="30"  Grid.Row="3" VerticalAlignment="Top" Grid.ColumnSpan="3" Margin="0,0,325,0"/>
+                    <TextBox x:Name="PasutitajaEmail" Grid.Column="2" Grid.Row="3"  Height="30" VerticalAlignment="Top"/>
+                    <Button  x:Name="PievienotPasutitaju" Content="Pievienot" Grid.Column="2" Grid.Row="3" Height="30" Background="#FFA5CDDC" VerticalAlignment="Top" Click="PievienotPasutitaju_Click" Margin="0,50,0,0" Grid.RowSpan="2"></Button>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Pievienot produktu" FontSize="16" Margin="61,-1,-64,-1" FontFamily="Microsoft Sans Serif">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1">
+                        <GradientStop Color="#FFF0F0F0"/>
+                        <GradientStop Color="#FFE2AFCB" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Label Content="Nosaukums" Grid.Column="1" Grid.Row="1" Width="147"  Height="30"   VerticalAlignment="Top"/>
+                    <TextBox x:Name="ProduktaNosaukums" Grid.Column="2" Grid.Row="1"  Height="30" VerticalAlignment="Top"/>
+                    <Label Content="Cena" Grid.Column="1" Grid.Row="2" Width="147"  Height="30"   VerticalAlignment="Top"/>
+                    <TextBox x:Name="ProduktaCena" Grid.Column="2" Grid.Row="2"  Height="30" VerticalAlignment="Top"/>
+                    <Button  x:Name="PievienotProduktu" Content="Pievienot" Grid.Column="2" Grid.Row="3" Height="30" Background="#FFA5CDDC" VerticalAlignment="Top" Click="PievienotProduktu_Click"></Button>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+
+</Window>

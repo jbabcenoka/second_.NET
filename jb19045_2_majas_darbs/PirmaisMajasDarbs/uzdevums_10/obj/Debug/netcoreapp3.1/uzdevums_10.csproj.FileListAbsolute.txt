@@ -1,0 +1,17 @@
+C:\Users\jbabc\source\repos\PirmaisMajasDarbs\uzdevums_10\obj\Debug\netcoreapp3.1\uzdevums_10.csprojAssemblyReference.cache
+C:\Users\jbabc\source\repos\PirmaisMajasDarbs\uzdevums_10\obj\Debug\netcoreapp3.1\uzdevums_10.AssemblyInfoInputs.cache
+C:\Users\jbabc\source\repos\PirmaisMajasDarbs\uzdevums_10\obj\Debug\netcoreapp3.1\uzdevums_10.AssemblyInfo.cs
+C:\Users\jbabc\source\repos\PirmaisMajasDarbs\uzdevums_10\obj\Debug\netcoreapp3.1\uzdevums_10.csproj.CoreCompileInputs.cache
+C:\Users\jbabc\source\repos\PirmaisMajasDarbs\uzdevums_10\bin\Debug\netcoreapp3.1\PirmaisMajasDarbs.exe
+C:\Users\jbabc\source\repos\PirmaisMajasDarbs\uzdevums_10\bin\Debug\netcoreapp3.1\uzdevums_10.exe
+C:\Users\jbabc\source\repos\PirmaisMajasDarbs\uzdevums_10\bin\Debug\netcoreapp3.1\uzdevums_10.deps.json
+C:\Users\jbabc\source\repos\PirmaisMajasDarbs\uzdevums_10\bin\Debug\netcoreapp3.1\uzdevums_10.runtimeconfig.json
+C:\Users\jbabc\source\repos\PirmaisMajasDarbs\uzdevums_10\bin\Debug\netcoreapp3.1\uzdevums_10.runtimeconfig.dev.json
+C:\Users\jbabc\source\repos\PirmaisMajasDarbs\uzdevums_10\bin\Debug\netcoreapp3.1\uzdevums_10.dll
+C:\Users\jbabc\source\repos\PirmaisMajasDarbs\uzdevums_10\bin\Debug\netcoreapp3.1\uzdevums_10.pdb
+C:\Users\jbabc\source\repos\PirmaisMajasDarbs\uzdevums_10\bin\Debug\netcoreapp3.1\PirmaisMajasDarbs.dll
+C:\Users\jbabc\source\repos\PirmaisMajasDarbs\uzdevums_10\bin\Debug\netcoreapp3.1\PirmaisMajasDarbs.pdb
+C:\Users\jbabc\source\repos\PirmaisMajasDarbs\uzdevums_10\obj\Debug\netcoreapp3.1\uzdevums_10.csproj.CopyComplete
+C:\Users\jbabc\source\repos\PirmaisMajasDarbs\uzdevums_10\obj\Debug\netcoreapp3.1\uzdevums_10.dll
+C:\Users\jbabc\source\repos\PirmaisMajasDarbs\uzdevums_10\obj\Debug\netcoreapp3.1\uzdevums_10.pdb
+C:\Users\jbabc\source\repos\PirmaisMajasDarbs\uzdevums_10\obj\Debug\netcoreapp3.1\uzdevums_10.genruntimeconfig.cache

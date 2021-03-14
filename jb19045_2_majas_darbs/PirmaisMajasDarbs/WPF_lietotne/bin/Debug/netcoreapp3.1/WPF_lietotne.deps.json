@@ -1,0 +1,54 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "WPF_lietotne/1.0.0": {
+        "dependencies": {
+          "PirmaisMajasDarbs": "1.0.0"
+        },
+        "runtime": {
+          "WPF_lietotne.dll": {}
+        }
+      },
+      "Caliburn.Micro.Core/3.2.0": {
+        "runtime": {
+          "lib/net45/Caliburn.Micro.dll": {
+            "assemblyVersion": "3.2.0.0",
+            "fileVersion": "3.2.0.0"
+          }
+        }
+      },
+      "PirmaisMajasDarbs/1.0.0": {
+        "dependencies": {
+          "Caliburn.Micro.Core": "3.2.0"
+        },
+        "runtime": {
+          "PirmaisMajasDarbs.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WPF_lietotne/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Caliburn.Micro.Core/3.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jmpC4OSvejrrIlcSmlzFjtyOmHQBrKgqJ9hy/LeWGoytct0e2b+TVgzWHTtvkzBF6TWWYlWCNErF10O6hNoL0g==",
+      "path": "caliburn.micro.core/3.2.0",
+      "hashPath": "caliburn.micro.core.3.2.0.nupkg.sha512"
+    },
+    "PirmaisMajasDarbs/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

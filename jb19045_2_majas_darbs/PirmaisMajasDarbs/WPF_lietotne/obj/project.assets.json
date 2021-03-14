@@ -1,0 +1,142 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Caliburn.Micro.Core/3.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Caliburn.Micro.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Caliburn.Micro.dll": {}
+        }
+      },
+      "PirmaisMajasDarbs/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Caliburn.Micro.Core": "3.2.0"
+        },
+        "compile": {
+          "bin/placeholder/PirmaisMajasDarbs.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PirmaisMajasDarbs.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Caliburn.Micro.Core/3.2.0": {
+      "sha512": "jmpC4OSvejrrIlcSmlzFjtyOmHQBrKgqJ9hy/LeWGoytct0e2b+TVgzWHTtvkzBF6TWWYlWCNErF10O6hNoL0g==",
+      "type": "package",
+      "path": "caliburn.micro.core/3.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "caliburn.micro.core.3.2.0.nupkg.sha512",
+        "caliburn.micro.core.nuspec",
+        "lib/net40/Caliburn.Micro.XML",
+        "lib/net40/Caliburn.Micro.dll",
+        "lib/net45/Caliburn.Micro.dll",
+        "lib/net45/Caliburn.Micro.xml",
+        "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10+uap10.0/Caliburn.Micro.XML",
+        "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10+uap10.0/Caliburn.Micro.dll",
+        "lib/portable-net45+win8+wp8+wpa81+MonoAndroid10+Xamarin.iOS10+MonoTouch10+uap10.0/Caliburn.Micro.dll.mdb",
+        "lib/sl5/Caliburn.Micro.XML",
+        "lib/sl5/Caliburn.Micro.dll"
+      ]
+    },
+    "PirmaisMajasDarbs/1.0.0": {
+      "type": "project",
+      "path": "../PirmaisMajasDarbs/PirmaisMajasDarbs.csproj",
+      "msbuildProject": "../PirmaisMajasDarbs/PirmaisMajasDarbs.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "PirmaisMajasDarbs >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\jbabc\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\jbabc\\Documents\\universitate\\2_kurss\\NET_vide\\Atradisana\\jb19045_OtraisMajasDarbs\\jb19045_2_majas_darbs\\PirmaisMajasDarbs\\WPF_lietotne\\WPF_lietotne.csproj",
+      "projectName": "WPF_lietotne",
+      "projectPath": "C:\\Users\\jbabc\\Documents\\universitate\\2_kurss\\NET_vide\\Atradisana\\jb19045_OtraisMajasDarbs\\jb19045_2_majas_darbs\\PirmaisMajasDarbs\\WPF_lietotne\\WPF_lietotne.csproj",
+      "packagesPath": "C:\\Users\\jbabc\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jbabc\\Documents\\universitate\\2_kurss\\NET_vide\\Atradisana\\jb19045_OtraisMajasDarbs\\jb19045_2_majas_darbs\\PirmaisMajasDarbs\\WPF_lietotne\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\jbabc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "projectReferences": {
+            "C:\\Users\\jbabc\\Documents\\universitate\\2_kurss\\NET_vide\\Atradisana\\jb19045_OtraisMajasDarbs\\jb19045_2_majas_darbs\\PirmaisMajasDarbs\\PirmaisMajasDarbs\\PirmaisMajasDarbs.csproj": {
+              "projectPath": "C:\\Users\\jbabc\\Documents\\universitate\\2_kurss\\NET_vide\\Atradisana\\jb19045_OtraisMajasDarbs\\jb19045_2_majas_darbs\\PirmaisMajasDarbs\\PirmaisMajasDarbs\\PirmaisMajasDarbs.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Caliburn.Micro.Core 3.2.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "Caliburn.Micro.Core",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
+}
